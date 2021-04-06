@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-14 AS MAVEN_BUILD
+FROM maven:3.8.1-jdk-11 AS MAVEN_BUILD
 COPY pom.xml /build/
 COPY src /build/src/
 WORKDIR /build/
