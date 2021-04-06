@@ -1,0 +1,42 @@
+version: '2'
+
+services:
+  backend:
+    build: .
+    image: appteste:latest
+    container_name: appteste-dev
+    ports:
+     - '9090:8080'
+    depends_on: mysql
+    networks:
+      - vlan_database
+
+  mysql:
+    container_name: mysql-dev
+    restart: always
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASS: ${DB_PASSWORD}
+    ports:
+     - '3306:3306'
+    volumes:
+     - ./mysqlData:/var/lib/mysql
+    networks:
+     - vlan_database
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-dev
+    environment:
+      PMA_HOST: 'mysql'
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    ports:
+    - 80:80
+    networks:
+    - vlan_database
+
+  networks:
+    vlan_database:
