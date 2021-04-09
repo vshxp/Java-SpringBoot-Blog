@@ -24,9 +24,11 @@ public class PostService {
                 p.getCategory()));
     }
 
+
     public List<PostDto> findAll() {
         return listMapper(postRepository.findAll());
     }
+
 
     public static List<PostDto> listMapper(List<Post> list){
         return list.parallelStream()
@@ -39,11 +41,15 @@ public class PostService {
                 .collect(Collectors.toList());
     }
 
+
     public void delete(Long id) {
         postRepository.deleteById(id);
     }
 
+
     public Optional<Post> findById(Long id) {
         return postRepository.findById(id);
     }
+
+
 }

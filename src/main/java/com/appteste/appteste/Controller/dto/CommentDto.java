@@ -19,4 +19,5 @@ public class CommentDto {
     private Date createDate;
     private Post post;
     private User user;
+    private Boolean visible;
 }

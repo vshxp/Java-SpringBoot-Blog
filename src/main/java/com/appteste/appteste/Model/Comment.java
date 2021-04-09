@@ -25,6 +25,8 @@ public class Comment {
     @CreationTimestamp
     private Date createDate;
 
+    private Boolean visible;
+
     @ManyToOne
     private Post post;
 
