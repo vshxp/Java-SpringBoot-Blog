@@ -1,6 +1,6 @@
-package com.appteste.appteste.Repository;
+package com.appteste.appteste.repository;
 
-import com.appteste.appteste.Model.Comment;
+import com.appteste.appteste.model.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

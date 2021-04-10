@@ -1,7 +1,7 @@
-package com.appteste.appteste.Controller;
+package com.appteste.appteste.controller;
 
-import com.appteste.appteste.Controller.dto.UserDto;
-import com.appteste.appteste.Service.UserService;
+import com.appteste.appteste.controller.dto.UserDto;
+import com.appteste.appteste.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

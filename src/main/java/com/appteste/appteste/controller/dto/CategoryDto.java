@@ -1,4 +1,4 @@
-package com.appteste.appteste.Controller.dto;
+package com.appteste.appteste.controller.dto;
 
 import lombok.*;
 

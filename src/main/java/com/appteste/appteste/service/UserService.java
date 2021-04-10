@@ -1,8 +1,8 @@
-package com.appteste.appteste.Service;
+package com.appteste.appteste.service;
 
-import com.appteste.appteste.Controller.dto.UserDto;
-import com.appteste.appteste.Model.User;
-import com.appteste.appteste.Repository.UserRepository;
+import com.appteste.appteste.controller.dto.UserDto;
+import com.appteste.appteste.model.User;
+import com.appteste.appteste.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.appteste.appteste.Model;
+package com.appteste.appteste.model;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

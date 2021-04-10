@@ -1,8 +1,8 @@
-package com.appteste.appteste.Service;
+package com.appteste.appteste.service;
 
-import com.appteste.appteste.Controller.dto.CategoryDto;
-import com.appteste.appteste.Model.Category;
-import com.appteste.appteste.Repository.CategoryRepository;
+import com.appteste.appteste.controller.dto.CategoryDto;
+import com.appteste.appteste.model.Category;
+import com.appteste.appteste.repository.CategoryRepository;
 import com.appteste.appteste.exceptions.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

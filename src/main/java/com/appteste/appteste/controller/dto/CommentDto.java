@@ -1,7 +1,7 @@
-package com.appteste.appteste.Controller.dto;
+package com.appteste.appteste.controller.dto;
 
-import com.appteste.appteste.Model.Post;
-import com.appteste.appteste.Model.User;
+import com.appteste.appteste.model.Post;
+import com.appteste.appteste.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,8 +1,7 @@
-package com.appteste.appteste.Controller;
+package com.appteste.appteste.controller;
 
-import com.appteste.appteste.Controller.dto.CategoryDto;
-import com.appteste.appteste.Controller.dto.CommentDto;
-import com.appteste.appteste.Service.CommentService;
+import com.appteste.appteste.controller.dto.CommentDto;
+import com.appteste.appteste.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,9 +1,8 @@
-package com.appteste.appteste.Service;
+package com.appteste.appteste.service;
 
-import com.appteste.appteste.Controller.dto.CommentDto;
-import com.appteste.appteste.Model.Comment;
-import com.appteste.appteste.Model.Post;
-import com.appteste.appteste.Repository.CommentRepository;
+import com.appteste.appteste.controller.dto.CommentDto;
+import com.appteste.appteste.model.Comment;
+import com.appteste.appteste.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

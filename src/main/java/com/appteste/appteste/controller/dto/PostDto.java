@@ -1,7 +1,7 @@
-package com.appteste.appteste.Controller.dto;
+package com.appteste.appteste.controller.dto;
 
-import com.appteste.appteste.Model.Category;
-import com.appteste.appteste.Model.User;
+import com.appteste.appteste.model.Category;
+import com.appteste.appteste.model.User;
 import lombok.*;
 
 import java.util.Date;

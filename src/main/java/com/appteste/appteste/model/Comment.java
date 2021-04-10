@@ -1,6 +1,5 @@
-package com.appteste.appteste.Model;
+package com.appteste.appteste.model;
 
-import com.sun.istack.NotNull;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 

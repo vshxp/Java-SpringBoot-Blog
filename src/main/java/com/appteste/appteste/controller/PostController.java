@@ -1,8 +1,8 @@
-package com.appteste.appteste.Controller;
+package com.appteste.appteste.controller;
 
-import com.appteste.appteste.Controller.dto.PostDto;
-import com.appteste.appteste.Model.Post;
-import com.appteste.appteste.Service.PostService;
+import com.appteste.appteste.controller.dto.PostDto;
+import com.appteste.appteste.model.Post;
+import com.appteste.appteste.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
