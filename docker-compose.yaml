@@ -6,24 +6,28 @@ services:
     image: appteste:latest
     container_name: appteste-dev
     ports:
-     - '9090:8080'
+      - '9090:8080'
+    restart: always
     depends_on:
-     - mysql
+      - mysql
     networks:
       - vlan_database
 
   mysql:
-    container_name: mysql-dev
+    container_name: mysql-server-dev
     restart: always
     image: mysql:5.7
+    command: --init-file /data/application/init.sql
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       MYSQL_USER: ${DB_USER}
       MYSQL_PASS: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
     ports:
       - '3306'
     volumes:
       - ./.mysqlData:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
     networks:
       - vlan_database
 
@@ -35,7 +39,7 @@ services:
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
     ports:
-      - 80:80
+      - 9091:80
     networks:
       - vlan_database
 

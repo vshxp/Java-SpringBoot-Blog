@@ -34,9 +34,9 @@ public class CommentController {
         commentService.logicDelete(commentDto);
     }
 
-    @GetMapping("/list/{postId}")
+    @GetMapping("/list/{postid}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<List<CommentDto>> listCommentsByPost(@PathVariable Long postId){
-        return ResponseEntity.ok(commentService.findCommentByPostId(postId));
+    public ResponseEntity<List<CommentDto>> listCommentsByPost(@PathVariable Long postid){
+        return ResponseEntity.ok(commentService.findCommentByPost(postid));
     }
 }

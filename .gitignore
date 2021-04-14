@@ -5,7 +5,7 @@ target/
 !**/src/test/**/target/
 
 
-mysqlData/
+.mysqlData/
 .env
 
 
