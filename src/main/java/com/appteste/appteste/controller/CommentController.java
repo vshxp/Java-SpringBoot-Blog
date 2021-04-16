@@ -37,6 +37,6 @@ public class CommentController {
     @GetMapping("/list/{postId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<CommentDto>> listCommentsByPost(@PathVariable Long postId){
-        return ResponseEntity.ok(commentService.findCommentByPostId(postId));
+        return ResponseEntity.ok(commentService.findCommentByPost(postId));
     }
 }
