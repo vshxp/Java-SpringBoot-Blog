@@ -33,8 +33,9 @@ public class CommentService {
                         commentDto.getUser()));
     }
 
-    public List<CommentDto> findCommentByPost(Long postid) {
-        return listMapper(commentRepository.findByPostId(postid));
+
+    public List<CommentDto> findCommentByPost(Long postId) {
+        return listMapper(commentRepository.findByPost(postId));
     }
 
     private List<CommentDto> listMapper(List<Comment> list){

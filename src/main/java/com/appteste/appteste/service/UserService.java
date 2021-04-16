@@ -13,7 +13,7 @@ public class UserService {
     private UserRepository userRepository;
 
     public void save(UserDto userDto) {
-        userRepository.save(new User(userDto.getId(), userDto.getName(), userDto.getPassword()));
+        userRepository.save(new User(userDto.getId(),userDto.getName(),userDto.getPassword(),userDto.getPassword()));
     }
 
 }
